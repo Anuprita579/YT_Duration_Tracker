@@ -5,7 +5,7 @@ function NotFound() {
     <>
         <div className='not-found'>
             <h1>Not Found</h1>
-            <p>Try putting a valid link inside the search input.</p>  
+            <p>Please toss a valid link into the search box and let the magic unfold. 🚀</p>  
         </div>      
     </>
   )

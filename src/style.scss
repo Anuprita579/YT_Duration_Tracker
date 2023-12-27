@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+:root{
+    background-color: #242424;
+}
+$screen-ratio : 1vw;
+img {
+    width: calc(($screen-ratio) * 20);
+    height: calc(($screen-ratio) * 20);
+}
+.header{
+    background-color: red;
+    padding: calc(($screen-ratio) * 1);
+    display: flex;
+    .yt-logo{
+        font-size: calc(($screen-ratio) * 2);
+        padding: calc(($screen-ratio) * 0.4);
+    }
+    h1{
+        font-family: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 800;
+        color: black;
+        padding-left: calc(($screen-ratio)*0.2);
+        span{
+            font-family: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            color: white;
+        }
+    }
+}
+
+.searchbar{
+    padding: calc(($screen-ratio)*2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input[type=text]{
+        height: calc(($screen-ratio)*3);
+        width: calc(($screen-ratio)*60);
+        padding-left: calc(($screen-ratio)*1);
+        color: white;
+        margin-top: calc(($screen-ratio)*5);
+        margin-bottom: calc(($screen-ratio)*3);
+        background-color: #3c4142;
+        border: 1px solid gray;
+    }
+    button{
+        height: calc(($screen-ratio)*3);
+        width: calc(($screen-ratio)*5);
+        background-color: #dc143c;
+        color: white;
+        margin-top: calc(($screen-ratio)*5);
+        margin-bottom: calc(($screen-ratio)*3);
+        cursor: pointer;
+    }
+}
+
+.playlist-length{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    color: white;
+    padding: calc(($screen-ratio)*5);
+    h3{
+        line-height: calc(($screen-ratio)*2);
+        span{
+            color: yellow;
+        }
+    }
+}
+.not-found{
+    background-color: #dc143c;
+    color: white;
+    text-align: center;
+    padding: calc(($screen-ratio)*5);
+    margin-top: calc(($screen-ratio)*5);
+    font-size: calc(($screen-ratio)*1);
+}
+
+.footer{
+    bottom: 0;
+    position: absolute;
+    background-color: #3c4142;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: calc(($screen-ratio)*1);
+    h5{
+        color: white;
+    }
+}
+

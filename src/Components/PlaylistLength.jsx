@@ -20,10 +20,10 @@ function PlaylistLength({playlistId}) {
   }
   return (
     <>
-      <div className='playlist-length' key={post.id}>
+      <div className='playlist-length' key={post?.id}>
         <h3>Number of Videos : <span> {playlistItem?.pageInfo?.totalResults}</span> </h3>
         <h3>Total Duration : <span> 1hr 45 min</span> </h3>
-        <h3>Youtuber : <span> {post.snippet.channelTitle}</span> </h3>
+        <h3>Youtuber : <span> {post?.snippet?.channelTitle}</span> </h3>
       </div>    
     </>
   )

@@ -18,8 +18,19 @@ function Searchbar() {
             setDisplayResult(true);
         }
     };
+
+    const extractPlaylistId = (url) => {
+        try{
+            const urlObject = new URL(url);
+            const params = new URLSearchParams(urlObject.search);
+            return params.get('list');
+        }
+        catch{
+            return null;
+        }
+    }
     
-    const playlistId = searchText;
+    const playlistId = extractPlaylistId(searchText);
   return(
     <>
         <div className='searchbar'>

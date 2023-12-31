@@ -8,7 +8,7 @@ function Searchbar() {
     const [notFound, setNotFound] = useState(false);
     const [displayResult, setDisplayResult] = useState(false);
 
-    const handleSearch = () => {
+    const handleSearch = async() => {
         if (searchText===""){
             setNotFound(true);
             setDisplayResult(false);
@@ -17,7 +17,13 @@ function Searchbar() {
             setNotFound(false);
             setDisplayResult(true);
         }
-    }
+    };
+    const getplaylistIdFromUrl = (url) => {
+        const urlParams = new URLSearchParams(url);
+        return urlParams.get('list');
+    };
+
+    const playlistId = getplaylistIdFromUrl(searchText);
   return(
     <>
         <div className='searchbar'>
@@ -26,7 +32,7 @@ function Searchbar() {
         </div>
 
         {notFound && <NotFound />}
-        {displayResult && <PlaylistLength />}
+        {displayResult && <PlaylistLength playlistId={playlistId}/>}
     </>
   )
 }

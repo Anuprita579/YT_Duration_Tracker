@@ -8,7 +8,7 @@ function PlaylistLength({playlistId}) {
   useEffect(()=>{
     const fetchPlaylistData = async() =>{
       try{
-        const playlistResponse = await axios.get(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&part=contentDetails&maxResults=5000&playlistId=${playlistId}&key=${import.meta.env.VITE_API_KEY}`);
+        const playlistResponse = await axios.get(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&part=contentDetails&maxResults=50&playlistId=${playlistId}&key=${import.meta.env.VITE_API_KEY}`);
         const playlistData = playlistResponse.data;
         setPlaylistItem(playlistData);
 
@@ -20,6 +20,8 @@ function PlaylistLength({playlistId}) {
             return videoData?.items[0]?.contentDetails?.duration;
           })
         );
+
+        console.log(videoDetails);
 
         const totalDurationInSeconds = videoDetails.reduce((total, duration)=>{
           return total + convertDurationToSeconds(duration);

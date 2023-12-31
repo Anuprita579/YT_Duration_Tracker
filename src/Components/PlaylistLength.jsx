@@ -11,13 +11,7 @@ function PlaylistLength({playlistId}) {
   },[playlistId]);
 
   const post = playlistItem.items[0];
-  if(!post || !post.snippet){
-    return(
-      <div className='not-found'>
-        <h1>Playlist not found</h1>
-      </div>
-    )
-  }
+  
   return (
     <>
       <div className='playlist-length' key={post?.id}>

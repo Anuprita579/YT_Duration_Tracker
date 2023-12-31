@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-
 function PlaylistLength({playlistId}) {
   const [playlistItem, setPlaylistItem] = useState({items: []});
   
   useEffect(()=>{
     axios
-      .get(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&part=contentDetails&maxResults=5000&playlistId=${playlistId}&key=AIzaSyDOUbPy2MIVCP788it4Cjs6KYx5dUpJm5U`)
+      .get(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&part=contentDetails&maxResults=5000&playlistId=${playlistId}&key=${import.meta.env.VITE_API_KEY}`)
       .then((res)=> setPlaylistItem(res.data));
   },[playlistId]);
 

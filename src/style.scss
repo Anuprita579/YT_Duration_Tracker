@@ -102,6 +102,7 @@ $screen-ratio : 1vw;
     align-items: center;
     width: 100%;
     padding: calc(($screen-ratio)*1);
+    font-size: calc(($screen-ratio)*1.5);
     h5{
         color: white;
     }

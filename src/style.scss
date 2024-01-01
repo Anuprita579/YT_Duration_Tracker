@@ -8,7 +8,7 @@
 :root{
     background-color: #242424;
 }
-$screen-ratio : 1vw;
+$screen-ratio : 1vh;
 .header{
     background-color: red;
     width: 100%;
@@ -67,7 +67,7 @@ $screen-ratio : 1vw;
     color: white;
     padding: calc(($screen-ratio)*5);
     h3{
-        line-height: calc(($screen-ratio)*2);
+        line-height: calc(($screen-ratio)*4);
         font-size: calc(($screen-ratio)*1.5);
         span{
             color: yellow;

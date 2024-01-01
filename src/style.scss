@@ -15,10 +15,10 @@ img {
 }
 .header{
     background-color: red;
+    width: 100%;
     padding: calc(($screen-ratio) * 1);
     display: flex;
     .yt-logo{
-        font-size: calc(($screen-ratio) * 2);
         padding: calc(($screen-ratio) * 0.4);
     }
     h1{
@@ -52,6 +52,7 @@ img {
     button{
         height: calc(($screen-ratio)*3);
         width: calc(($screen-ratio)*5);
+        font-size: calc(($screen-ratio)*1);
         background-color: #dc143c;
         color: white;
         margin-top: calc(($screen-ratio)*5);
@@ -84,6 +85,7 @@ img {
 }
 .not-found{
     background-color: #dc143c;
+    width: 100%;
     color: white;
     text-align: center;
     padding: calc(($screen-ratio)*5);

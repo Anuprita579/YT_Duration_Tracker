@@ -33,7 +33,6 @@ function Searchbar() {
         }
     }
     
-    //const playlistId = extractPlaylistId(searchText);
   return(
     <>
         <div className='searchbar'>

@@ -38,6 +38,7 @@ $screen-ratio : 1vw;
     input[type=text]{
         height: calc(($screen-ratio)*4);
         width: 70%;
+        font-size: calc(($screen-ratio)*1.5);
         padding-left: calc(($screen-ratio)*1);
         color: white;
         margin-top: calc(($screen-ratio)*5);
@@ -48,7 +49,7 @@ $screen-ratio : 1vw;
     button{
         height: calc(($screen-ratio)*4);
         width: 7%;
-        font-size: calc(($screen-ratio)*1.25);
+        font-size: calc(($screen-ratio)*1.5);
         background-color: #dc143c;
         color: white;
         margin-top: calc(($screen-ratio)*5);

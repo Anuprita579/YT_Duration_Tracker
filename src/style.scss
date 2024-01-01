@@ -48,7 +48,7 @@ $screen-ratio : 1vw;
     button{
         height: calc(($screen-ratio)*4);
         width: 7%;
-        font-size: calc(($screen-ratio)*1);
+        font-size: calc(($screen-ratio)*1.25);
         background-color: #dc143c;
         color: white;
         margin-top: calc(($screen-ratio)*5);

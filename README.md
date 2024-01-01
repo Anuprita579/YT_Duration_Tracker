@@ -14,11 +14,8 @@ YT Duration Tracker is a web application that allows users to analyze YouTube pl
 
 ## Features
 - **Playlist Analysis**: Paste your YouTube playlist link to instantly retrieve information about the playlist.
-
 - **Comprehensive Metrics**: Get insights on the number of videos, total duration, and the youtuber associated with the playlist.
-
 - **Playback Speeds**: Explore video durations at different playback speeds - 1x, 1.25x, 1.5x, 1.75x, and 2x.
-
 - **Error Handling**: Receive a "Not Found" message when an invalid or non-existent link is entered.
 
 ## Demo

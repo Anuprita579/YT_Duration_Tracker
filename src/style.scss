@@ -16,10 +16,12 @@ $screen-ratio : 1vw;
     display: flex;
     .yt-logo{
         padding: calc(($screen-ratio) * 0.4);
+        font-size: calc(($screen-ratio) * 2);
     }
     h1{
         font-family: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-weight: 800;
+        font-size: calc(($screen-ratio) * 2);
         color: black;
         padding-left: calc(($screen-ratio)*0.2);
         span{
@@ -65,10 +67,9 @@ $screen-ratio : 1vw;
     align-items: center;
     background-color: #242424;
     color: white;
-    padding: calc(($screen-ratio)*5);
     h3{
-        line-height: calc(($screen-ratio)*2);
-        font-size: calc(($screen-ratio)*1.5);
+        font-size: calc(($screen-ratio) * 2);
+        line-height: calc(($screen-ratio) * 4);;
         span{
             color: yellow;
         }
@@ -76,7 +77,7 @@ $screen-ratio : 1vw;
     .speed{
         color: greenyellow;
         font-weight: 900;
-        font-size: calc(($screen-ratio)*1.5);
+        font-size: calc(($screen-ratio) * 2);
         span{
             color: aqua;
         }

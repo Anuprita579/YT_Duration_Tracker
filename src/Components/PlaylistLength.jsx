@@ -54,8 +54,8 @@ function PlaylistLength({playlistId}) {
   const formatDuration = (totalSeconds) => {
     const hours = Math.floor(totalSeconds/3600);
     const minutes = Math.floor((totalSeconds%3600) / 60);
-    const seconds = totalSeconds%60;
-    return `${hours}h ${minutes}m ${seconds}`;
+    const seconds = Math.floor(totalSeconds%60);
+    return `${hours}h ${minutes}m ${seconds}s`;
   }
 
   const post = playlistItem.items[0];
@@ -66,6 +66,11 @@ function PlaylistLength({playlistId}) {
         <h3>Number of Videos : <span> {playlistItem?.pageInfo?.totalResults}</span> </h3>
         <h3>Total Duration : <span> {formatDuration(duration)}</span> </h3>
         <h3>Youtuber : <span> {post?.snippet?.channelTitle}</span> </h3>
+        <h3 className='speed'> 1.25x : <span> {formatDuration(duration/1.25)}</span> </h3>
+        <h3 className='speed'> 1.5x : <span> {formatDuration(duration/1.5)}</span> </h3>
+        <h3 className='speed'> 1.75x : <span> {formatDuration(duration/1.75)}</span> </h3>
+        <h3 className='speed'> 2x : <span> {formatDuration(duration/2)}</span> </h3>
+        
       </div>    
     </>
   )

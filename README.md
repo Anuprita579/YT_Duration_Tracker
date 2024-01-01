@@ -50,6 +50,6 @@ Open your browser and visit http://localhost:5173
 - Vite: Bundler
 
 ## Usage
-- Paste Link: Enter the YouTube playlist link into the provided input field.
-- Click Search: Initiate the analysis by clicking the search button.
-- View Results: Explore the detailed results, including video count, total duration, youtuber information, and durations at various playback speeds.
+- **Paste Link**: Enter the YouTube playlist link into the provided input field.
+- **Click Search**: Initiate the analysis by clicking the search button.
+- **View Results**: Explore the detailed results, including video count, total duration, youtuber information, and durations at various playback speeds.

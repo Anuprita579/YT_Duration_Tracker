@@ -68,6 +68,7 @@ $screen-ratio : 1vw;
     padding: calc(($screen-ratio)*5);
     h3{
         line-height: calc(($screen-ratio)*2);
+        font-size: calc(($screen-ratio)*1.5);
         span{
             color: yellow;
         }
@@ -75,6 +76,7 @@ $screen-ratio : 1vw;
     .speed{
         color: greenyellow;
         font-weight: 900;
+        font-size: calc(($screen-ratio)*1.5);
         span{
             color: aqua;
         }

@@ -9,10 +9,6 @@
     background-color: #242424;
 }
 $screen-ratio : 1vw;
-img {
-    width: calc(($screen-ratio) * 20);
-    height: calc(($screen-ratio) * 20);
-}
 .header{
     background-color: red;
     width: 100%;
@@ -40,8 +36,8 @@ img {
     align-items: center;
     justify-content: center;
     input[type=text]{
-        height: calc(($screen-ratio)*3);
-        width: calc(($screen-ratio)*60);
+        height: calc(($screen-ratio)*4);
+        width: 70%;
         padding-left: calc(($screen-ratio)*1);
         color: white;
         margin-top: calc(($screen-ratio)*5);
@@ -50,8 +46,8 @@ img {
         border: 1px solid gray;
     }
     button{
-        height: calc(($screen-ratio)*3);
-        width: calc(($screen-ratio)*5);
+        height: calc(($screen-ratio)*4);
+        width: 7%;
         font-size: calc(($screen-ratio)*1);
         background-color: #dc143c;
         color: white;

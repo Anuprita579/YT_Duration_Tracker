@@ -25,7 +25,7 @@ https://github.com/Anuprita579/YT_Duration_Tracker/assets/141035951/eabbe2b4-cb0
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/YT-Duration-Tracker.git
+   git clone https://github.com/Anuprita579/YT_Duration_Tracker.git
    ```
 2. Navigate to project directory
    ```
@@ -44,6 +44,7 @@ Open your browser and visit http://localhost:5173
 ## Technologies Used
 - React: Frontend
 - Axios: API fetching
+- SASS: Styling
 - Vite: Bundler
 
 ## Usage

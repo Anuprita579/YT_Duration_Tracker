@@ -1,6 +1,7 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 function PlaylistLength({playlistId}) {
   const [playlistItem, setPlaylistItem] = useState({items: []});
@@ -78,3 +79,7 @@ function PlaylistLength({playlistId}) {
 }
 
 export default PlaylistLength
+
+PlaylistLength.propTypes = {
+  playlistId: PropTypes.string
+};

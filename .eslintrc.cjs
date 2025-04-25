@@ -16,5 +16,10 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // Add these new rules:
+    'react/react-in-jsx-scope': 'off',
+    'no-unused-vars': ['error', { 'varsIgnorePattern': 'React' }],
+    // Optionally disable the prop-types rule if you don't want to use PropTypes
+    'react/prop-types': 'off'
   },
 }

@@ -11,14 +11,14 @@ function PlaylistLength({playlistId}) {
         let nextPageToken = null;
         let allVideos = [];
         do{
-          const playlistResponse = await axios.get(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&part=contentDetails&maxResults=50&playlistId=${playlistId}&key=${import.meta.env.VITE_API_KEY}&pageToken=${nextPageToken || ''}`);
+          const playlistResponse = await axios.get(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&part=contentDetails&maxResults=50&playlistId=${playlistId}&key=${process.env.NEXT_PUBLIC_API_KEY}&pageToken=${nextPageToken || ''}`);
           const playlistData = playlistResponse.data;
           setPlaylistItem(playlistData);
           
           const videoIds = playlistData.items.map(item => item.contentDetails.videoId);
           const videoDetails = await Promise.all(
             videoIds.map(async videoId => {
-              const videoResponse = await axios.get(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet&part=contentDetails&id=${videoId}&key=${import.meta.env.VITE_API_KEY}`);
+              const videoResponse = await axios.get(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet&part=contentDetails&id=${videoId}&key=${process.env.NEXT_PUBLIC_API_KEY}`);
               const videoData = videoResponse.data;
               return videoData?.items[0]?.contentDetails?.duration;
             })

@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+/* Your manual global reset */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    display: block;
+    place-items: normal;
+    min-height: auto;
+    background-color: #242424;
+  }
 *{
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 400;
 }
-:root{
-    background-color: #242424;
-}
+
 $screen-ratio : 1vw;
 .header{
     background-color: red;
-    width: 100%;
     padding: calc(($screen-ratio) * 1);
     display: flex;
     .yt-logo{
@@ -50,7 +57,7 @@ $screen-ratio : 1vw;
     }
     button{
         height: calc(($screen-ratio)*4);
-        width: 7%;
+        width: 10%;
         font-size: calc(($screen-ratio)*1.5);
         background-color: #dc143c;
         color: white;
@@ -85,7 +92,6 @@ $screen-ratio : 1vw;
 }
 .not-found{
     background-color: #dc143c;
-    width: 100%;
     color: white;
     text-align: center;
     padding: calc(($screen-ratio)*5);
@@ -101,7 +107,7 @@ $screen-ratio : 1vw;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: calc(($screen-ratio)*1);
+    padding: calc(($screen-ratio)*1) 0;
     font-size: calc(($screen-ratio)*1.5);
     h5{
         color: white;

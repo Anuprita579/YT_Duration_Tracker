@@ -23,3 +23,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Next dependencies
+.next
+next-env.d.ts
+dist

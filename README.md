@@ -6,6 +6,7 @@
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)
+- [Chrome Extension](#chrome-extension)
 - [Technologies Used](#technologies-used)
 - [Usage](#usage)
 
@@ -40,6 +41,42 @@ https://github.com/Anuprita579/YT_Duration_Tracker/assets/141035951/eabbe2b4-cb0
    npm run dev
    ```
 Open your browser and visit http://localhost:5173
+
+
+## Chrome Extension
+
+Want to access the YT Duration Tracker directly from your browser? Follow these steps to install the Chrome Extension:
+1.  Get a YouTube API Key
+   * Go to Google Cloud Console
+   * Create a new project
+   * Enable YouTube Data API v3
+   * Go to APIs & Services
+   * Credentials
+   * Click Create Credentials
+   * API Key
+   * Copy your API Key
+
+2. Add API Key to config.js
+Create a file named `config.js` inside the `chrome-extension` folder and paste the following:
+```
+const CONFIG = {
+  API_KEY: 'YOUR-YOUTUBE-API-KEY-HERE'
+};
+```
+Replace `YOUR-YOUTUBE-API-KEY-HERE` with the API key you generated.
+
+3. Install the Extension
+   * Download this repository as a ZIP file
+   * Extract the `chrome-extension` folder from the ZIP file and place it in a directory of your choice.
+   * Open Chrome and go to `chrome://extensions`
+   * Enable Developer mode (top right)
+   * Click Load unpacked
+   * Select the `chrome-extension` folder
+
+The extension is now installed and ready to use!
+
+https://github.com/user-attachments/assets/fe04406f-ee08-4f9e-a190-88e0c2006bac
+
 
 ## Technologies Used
 - React: Frontend

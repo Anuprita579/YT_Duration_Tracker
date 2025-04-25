@@ -28,3 +28,6 @@ dist-ssr
 .next
 next-env.d.ts
 dist
+
+# Chrome extension
+chrome-extension/config.js

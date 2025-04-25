@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./components/Header";
-import Searchbar from "./components/Searchbar";
-import Footer from "./components/Footer";
+import Header from "./Components/Header";
+import Searchbar from "./Components/Searchbar";
+import Footer from "./Components/Footer";
 import './style.scss'
 
 const App = () => {

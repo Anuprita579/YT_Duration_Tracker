@@ -17,24 +17,19 @@
         <h1>YT <span>Duration Tracker</span></h1>
       </div>
 
-      <div class="searchbar">
-        <input
-          type="text"
-          id="playlist-url"
-          placeholder="Paste the link of the playlist here"
-        />
-        <button id="search-btn">Search</button>
+      <div id="current-url" class="current-url">
+        <p>Analyzing the current YouTube playlist...</p>
       </div>
 
       <div id="not-found" class="not-found hidden">
         <h1>Not Found</h1>
         <p>
-          Please toss a valid link into the search box and let the magic unfold.
-          🚀
+          This extension works only on YouTube playlist pages. Please navigate
+          to a YouTube playlist and try again! 🚀
         </p>
       </div>
 
-      <div id="loading" class="loading hidden">
+      <div id="loading" class="loading">
         <div class="spinner"></div>
         <p>Fetching playlist data...</p>
       </div>

@@ -75,7 +75,7 @@ Replace `YOUR-YOUTUBE-API-KEY-HERE` with the API key you generated.
 
 The extension is now installed and ready to use!
 
-https://github.com/user-attachments/assets/fe04406f-ee08-4f9e-a190-88e0c2006bac
+https://github.com/user-attachments/assets/825450ca-2a0b-4baf-87c2-f2fac695f1d7
 
 
 ## Technologies Used

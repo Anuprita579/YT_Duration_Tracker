@@ -47,13 +47,11 @@ Open your browser and visit http://localhost:5173
 
 Want to access the YT Duration Tracker directly from your browser? Follow these steps to install the Chrome Extension:
 1.  Get a YouTube API Key
-   * Go to Google Cloud Console
+   * Go to Google Cloud Console (https://console.cloud.google.com/apis/dashboard)
    * Create a new project
    * Enable YouTube Data API v3
-   * Go to APIs & Services
-   * Credentials
-   * Click Create Credentials
-   * API Key
+   * Go to APIs & Services → Credentials
+   * Click Create Credentials → API Key
    * Copy your API Key
 
 2. Add API Key to config.js

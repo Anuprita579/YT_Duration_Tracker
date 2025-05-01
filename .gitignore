@@ -31,3 +31,4 @@ dist
 
 # Chrome extension
 chrome-extension/config.js
+build

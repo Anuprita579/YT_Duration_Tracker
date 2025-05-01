@@ -1,14 +1,18 @@
 {
   "manifest_version": 3,
   "name": "YouTube Duration Tracker",
-  "description": "Track durations of YouTube playlists",
+  "description": "Quickly calculate the total duration of YouTube playlists, including estimated watch times at different speeds.",
   "version": "1.0",
   "action": {
     "default_popup": "index.html",
     "default_icon": {
+      "32": "icons/icon32.png",
       "48": "icons/icon48.png",
       "64": "icons/icon64.png",
-      "128": "icons/icon128.png"
+      "72": "icons/icon72.png",
+      "128": "icons/icon128.png",
+      "256": "icons/icon256.png",
+      "512": "icons/icon512.png"
     }
   },
   "permissions": ["tabs", "activeTab"],

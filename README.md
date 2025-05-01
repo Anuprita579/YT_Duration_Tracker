@@ -73,8 +73,7 @@ Replace `YOUR-YOUTUBE-API-KEY-HERE` with the API key you generated.
 
 The extension is now installed and ready to use!
 
-https://github.com/user-attachments/assets/825450ca-2a0b-4baf-87c2-f2fac695f1d7
-
+https://github.com/user-attachments/assets/58f029ec-451c-4ead-adb6-c934c651b75a
 
 ## Technologies Used
 - React: Frontend
